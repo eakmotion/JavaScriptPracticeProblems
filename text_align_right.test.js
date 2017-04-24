@@ -1,3 +1,9 @@
+// Emulate text justify right in monospace font.
+// rules:
+// Use spaces to fill in the gaps on the left side of the words.
+// Use '\n' to separate lines.
+// '\n' is not included in the length of a line.
+
 const alignRight = (text, width) => {
   let regex = new RegExp('(.{0,' + width +  '})( |$)', 'g');
   return text
